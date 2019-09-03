@@ -7,15 +7,17 @@
       <li><nuxt-link to="/blog/blog-post-4">Blog Post 4</nuxt-link></li>
       <li><nuxt-link to="/blog/blog-post-5">Blog Post 5</nuxt-link></li>
       <button @click="alert('Alert!')">Show alert</button><br />
-      <button @click="login">Login</button><br />
-      <button @click="logout">Logout</button><br />
-      isAuthenticated: {{ isAuthenticated }}<br />
-      loggedUser: {{ loggedUser }}<br />
+      <button @click="login">Login</button><br /><br />
+      <button @click="logout">Logout</button><br /><br />
+      posts: {{ posts }}<br /><br />
+      isAuthenticated: {{ isAuthenticated }}<br /><br />
+      loggedUser: {{ loggedUser }}<br /><br />
     </ul>
   </div>
 </template>
 
 <script>
+import blogPosts from '~/static/posts.json'
 export default {
 	data () {
 		return {
@@ -28,6 +30,9 @@ export default {
 		},
 		loggedUser() {
 			return this.$store.getters['auth/loggedUser']
+		},
+		posts() {
+			return blogPosts
 		}
 	},
 	methods: {

@@ -54,6 +54,9 @@ export default {
         domain: 'dev-b36ddgyg.eu.auth0.com',
         client_id: '3r3I79dZFCvhG9izQhRK2ZjgxhxxS6J0'
       }
+    },
+    redirect: {
+      callback: '/login'
     }
   },
   /*

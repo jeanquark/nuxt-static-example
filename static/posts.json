@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Post 1",
+		"slug": "post_1",
+		"image": "coldest-sunset.jpg",
+		"tags": ["photography", "travel", "winter"],
+		"content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo fugit aperiam ratione vero ex. Doloremque provident voluptates repellendus obcaecati adipisci nisi ab, fugiat magnam recusandae corporis voluptas ipsum consequuntur alias."
+    },
+    {
+        "title": "Post 2",
+		"slug": "post_2",
+		"image": "road.jpg",
+		"tags": ["cloud", "road", "mountain"],
+        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo fugit aperiam ratione vero ex. Doloremque provident voluptates repellendus obcaecati adipisci nisi ab, fugiat magnam recusandae corporis voluptas ipsum consequuntur alias."
+    },
+    {
+        "title": "Post 3",
+		"slug": "post_3",
+		"image": "forest.jpg",
+		"tags": ["green", "nature", "tree"],
+        "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo fugit aperiam ratione vero ex. Doloremque provident voluptates repellendus obcaecati adipisci nisi ab, fugiat magnam recusandae corporis voluptas ipsum consequuntur alias."
+    }
+]
