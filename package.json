@@ -1,0 +1,19 @@
+{
+  "name": "nuxt-static-example",
+  "version": "1.0.0",
+  "description": "My shining Nuxt.js project",
+  "author": "jeanquark",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/markdownit": "^1.2.6",
+    "markdown-it": "^9.1.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {}
+}
