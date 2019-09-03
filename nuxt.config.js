@@ -44,17 +44,18 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    '@nuxtjs/axios',
+    '@nuxtjs/auth'
   ],
-  // markdownit: {
-    // preset: 'default',
-    // linkify: true,
-    // breaks: true,
-    // use: [
-    //   'markdown-it-div',
-    //   'markdown-it-attrs'
-    // ]
-  // },
+  auth: {
+    strategies: {
+      auth0: {
+        domain: 'dev-b36ddgyg.eu.auth0.com',
+        client_id: '3r3I79dZFCvhG9izQhRK2ZjgxhxxS6J0'
+      }
+    }
+  },
   /*
   ** Build configuration
   */
