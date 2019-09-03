@@ -56,7 +56,8 @@ export default {
       }
     },
     redirect: {
-      callback: '/login'
+      // callback: '/login'
+      callback: '/nuxt-static-example/login'
     }
   },
   /*
