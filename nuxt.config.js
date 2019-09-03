@@ -29,11 +29,13 @@ export default {
   ** Global CSS
   */
   css: [
+    { src: '~/node_modules/highlight.js/styles/monokai-sublime.css', lang: 'css' }
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    // { src: '~/plugins/vue-highlightjs', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -78,6 +80,12 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/auth'
   ],
+  markdownit: {
+    injected: true,
+    use: [
+      'markdown-it-highlightjs'
+    ]
+  },
   auth: {
     strategies: {
       auth0: {
