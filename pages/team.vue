@@ -1,3 +1,3 @@
 <template>
-	<div>Team page</div>
+	<div>{{ $t('team') }}</div>
 </template>

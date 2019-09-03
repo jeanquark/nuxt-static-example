@@ -1,0 +1,14 @@
+{
+	"home": "Accueil",
+    "welcome": "Bienvenue",
+	"about": "A propos",
+	"team": "L'Equipe",
+    "contact": "Contact",
+    "login": "Login",
+    "logout": "Logout",
+    "pages": {
+        "index": {
+            "explanation": "petit text explicatif"
+        }
+    }
+}

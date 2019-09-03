@@ -44,6 +44,36 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            code: 'en',
+            iso: 'en-US',
+            name: 'English',
+            file: 'en-US.json'
+          },
+          {
+            code: 'fr',
+            iso: 'fr-FR',
+            name: 'Français',
+            file: 'fr-FR.json'
+          },
+          {
+            code: 'de',
+            iso: 'de-DE',
+            name: 'Deutsch',
+            file: 'de-DE.json'
+          }
+        ],
+        parsePages: false,
+        lazy: true,
+        langDir: 'lang/',
+        defaultLocale: 'en',
+        seo: false
+      }
+    ],
     '@nuxtjs/markdownit',
     '@nuxtjs/axios',
     '@nuxtjs/auth'
@@ -57,7 +87,7 @@ export default {
     },
     redirect: {
       // callback: '/login'
-      callback: '/nuxt-static-example/login'
+      callback: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/nuxt-static-example/login' : '/login'
     }
   },
   /*

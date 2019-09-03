@@ -1,0 +1,14 @@
+{
+	"home": "Home",
+    "welcome": "Welcome",
+	"about": "About",
+	"team": "Team",
+    "contact": "Contact",
+    "login": "Login",
+    "logout": "Logout",
+    "pages": {
+        "index": {
+            "explanation": "small explanatory text"   
+        }
+    }
+}

@@ -6,13 +6,19 @@
       <li><nuxt-link to="/blog/blog-post-3">Blog Post 3</nuxt-link></li>
       <li><nuxt-link to="/blog/blog-post-4">Blog Post 4</nuxt-link></li>
       <li><nuxt-link to="/blog/blog-post-5">Blog Post 5</nuxt-link></li>
-      <button @click="alert('Alert!')">Show alert</button><br />
-      <button @click="login">Login</button><br /><br />
-      <button @click="logout">Logout</button><br /><br />
-      posts: {{ posts }}<br /><br />
-      isAuthenticated: {{ isAuthenticated }}<br /><br />
-      loggedUser: {{ loggedUser }}<br /><br />
+      
     </ul>
+
+	  <button @click="alert('Alert!')">Show alert</button><br />
+	  <button @click="login">Login</button><br /><br />
+	  <button @click="logout">Logout</button><br /><br />
+	  posts: {{ posts }}<br /><br />
+	  isAuthenticated: {{ isAuthenticated }}<br /><br />
+	  loggedUser: {{ loggedUser }}<br /><br />
+	  i18n locale: {{ $i18n.locale }}<br /><br />
+	  <button @click="switchLanguage('en')">Switch to english</button>
+	  <button @click="switchLanguage('fr')">Switch to french</button>
+	  <button @click="switchLanguage('de')">Switch to German</button>
   </div>
 </template>
 
@@ -33,7 +39,8 @@ export default {
 		},
 		posts() {
 			return blogPosts
-		}
+		},
+
 	},
 	methods: {
 		alert (message) {
@@ -45,6 +52,9 @@ export default {
 		async logout() {
 			await this.$auth.logout()
             window.location.href = 'https://dev-b36ddgyg.eu.auth0.com/v2/logout?returnTo=http%3A%2F%2Flocalhost:3000'
+		},
+		switchLanguage (language) {
+			this.$i18n.locale = language
 		}
 	}
 }
