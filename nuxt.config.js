@@ -36,6 +36,7 @@ export default {
   */
   plugins: [
     // { src: '~/plugins/vue-highlightjs', ssr: false }
+    { src: '~/plugins/prism.js', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules

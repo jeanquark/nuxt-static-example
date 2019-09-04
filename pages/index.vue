@@ -1,18 +1,22 @@
 <template>
   <div>
-    <ul>
+    <!-- <ul>
       <li><nuxt-link to="/blog/blog-post-1">Blog Post 1</nuxt-link></li>
       <li><nuxt-link to="/blog/blog-post-2">Blog Post 2</nuxt-link></li>
       <li><nuxt-link to="/blog/blog-post-3">Blog Post 3</nuxt-link></li>
       <li><nuxt-link to="/blog/blog-post-4">Blog Post 4</nuxt-link></li>
       <li><nuxt-link to="/blog/blog-post-5">Blog Post 5</nuxt-link></li>
       
-    </ul>
+    </ul> -->
 
 	  <button @click="alert('Alert!')">Show alert</button><br />
 	  <button @click="login">Login</button><br /><br />
 	  <button @click="logout">Logout</button><br /><br />
-	  posts: {{ posts }}<br /><br />
+	  <!-- posts: {{ posts }}<br /><br /> -->
+	  <div v-for="post in posts" :key="post.slug" style="border: 1px solid orangered;">
+	  	{{ post.title }}<br />
+	  	<nuxt-link :to="`/blog/${post.link}`">Link</nuxt-link>
+	  </div>
 	  isAuthenticated: {{ isAuthenticated }}<br /><br />
 	  loggedUser: {{ loggedUser }}<br /><br />
 	  i18n locale: {{ $i18n.locale }}<br /><br />
