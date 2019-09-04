@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{140:function(o){o.exports=JSON.parse('{"home":"Home","welcome":"Welcome","about":"About","team":"Team","contact":"Contact","login":"Login","logout":"Logout","pages":{"index":{"explanation":"small explanatory text"}}}')}}]);
