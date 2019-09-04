@@ -15,6 +15,7 @@
 	  <!-- posts: {{ posts }}<br /><br /> -->
 	  <div v-for="post in posts" :key="post.slug" style="border: 1px solid orangered;">
 	  	{{ post.title }}<br />
+	  	<img :src="`images/${post.image}`" width="200" /><br />
 	  	<nuxt-link :to="`/blog/${post.link}`">Link</nuxt-link>
 	  </div>
 	  isAuthenticated: {{ isAuthenticated }}<br /><br />
